@@ -1,7 +1,68 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap");
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Mon../fonts/serrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Black.eot");
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-Bold.eot");
+  src: local("Nunito Bold"), local("Nunito-Bold"), url("../fonts/Nunito-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff") format("woff"), url("../fonts/Nunito-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-Regular.eot");
+  src: local("Nunito Regular"), local("Nunito-Regular"), url("../fonts/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff"), url("../fonts/Nunito-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-Light.eot");
+  src: local("Nunito Light"), local("Nunito-Light"), url("../fonts/Nunito-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito-Light.woff2") format("woff2"), url("../fonts/Nunito-Light.woff") format("woff"), url("../fonts/Nunito-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-SemiBold.eot");
+  src: local("Nunito SemiBold"), local("Nunito-SemiBold"), url("../fonts/Nunito-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff"), url("../fonts/Nunito-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -41,7 +102,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -50,7 +111,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito";
 }
 
 input::-ms-clear {
@@ -97,7 +158,7 @@ body {
   font-size: 16px;
   line-height: 21,82px;
   background-color: #F9FBFF;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito";
   color: #232C38;
 }
 
@@ -707,6 +768,10 @@ body.ie ._ibg img {
       flex-shrink: 0;
 }
 
+.swiper-container-initialized .swiper-slide-next {
+  opacity: 0.5;
+}
+
 .swiper-container-android .swiper-slide,
 .swiper-container-android .swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
@@ -964,13 +1029,13 @@ body.ie ._ibg img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 1600px;
+  margin: 0 auto;
 }
 
 .choice__cart {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 560px;
-          flex: 0 1 560px;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
   height: 256px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,12 +1075,12 @@ body.ie ._ibg img {
 
 .arrow--choice {
   top: 57.5%;
-  right: 17px;
+  right: 175px;
 }
 
 .arrow--combo {
   top: 50.5%;
-  right: 17px;
+  right: 60px;
 }
 
 .arrow::before {
@@ -1118,7 +1183,7 @@ body.ie ._ibg img {
 
 .combo {
   position: relative;
-  padding: 88px 0 128px 0;
+  padding: 88px 0 130px 0;
 }
 
 .combo::after {
@@ -1136,8 +1201,6 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

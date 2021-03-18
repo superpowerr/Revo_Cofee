@@ -41,7 +41,7 @@ if (sliderScrollItems.length > 0) {
 		const sliderScrollBar = sliderScrollItem.querySelector('.swiper-scrollbar');
 		const sliderScroll = new Swiper(sliderScrollItem, {
 			direction: 'vertical',
-			slidesPerView: 'auto',
+			slidesPerView: 1.4,
 			freeMode: true,
 			scrollbar: {
 				el: sliderScrollBar,
@@ -60,16 +60,9 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 let sliderSlider = new Swiper('.choice__swiper', {
-	/*
-	effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	*/
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
+	slidesPerView: 1.15,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 800,
@@ -77,7 +70,9 @@ let sliderSlider = new Swiper('.choice__swiper', {
 	//simulateTouch: false,
 	loop: true,
 	preloadImages: true,
-	//lazy: true,
+	lazy: true,
+	// centerMode: true,
+	// variableWidth: true,
 	// Dotts
 	//pagination: {
 	//	el: '.slider-quality__pagging',
@@ -89,16 +84,9 @@ let sliderSlider = new Swiper('.choice__swiper', {
 	},
 });
 let sliderSliderOne = new Swiper('.combo__swiper', {
-	/*
-	effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	*/
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
+	slidesPerView: 1.25,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 800,
@@ -106,6 +94,7 @@ let sliderSliderOne = new Swiper('.combo__swiper', {
 	//simulateTouch: false,
 	loop: true,
 	preloadImages: true,
+	// variableWidth: true,
 	//lazy: true,
 	// Dotts
 	//pagination: {
